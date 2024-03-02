@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="max-age=3600">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/ICICT LOGO.jpg">  
+  <title>ICICT-2024</title>
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  .registar {
+    background-image: url("image/Registration\ And\ Guide\ Background.webp");
+    background-position: cover;
+    object-fit: cover;
+  }
+
+  .registar h1 {
+    font-weight: 800;
+    font-size: 5em;
+    filter: drop-shadow(1px 3px 1px black);
+    transform: scale(1);
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .rgsg {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .rhj {
+    text-align: left;
+
+  }
+
+  .rhj span {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    filter: drop-shadow(1px 1px 1px black);
+    transform: scale(1);
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .rhj p {
+    font-size: 25px;
+    filter: drop-shadow(1px 1px 1px black);
+    transform: scale(1);
+    font-weight: 600;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .rhj h2 {
+    filter: drop-shadow(2px 4px 4px black);
+    transform: scale(1);
+    font-weight: 700;
+    font-size: 2em;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .rhj b {
+    display: inline-block;
+    /* border-bottom: 1px solid white; */
+    color: rgb(223, 226, 29);
+  }
+
+  .pag {
+    font-weight: 500;
+    filter: drop-shadow(1px 1px 1px black);
+    transform: scale(1);
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .lfj {
+    text-align: justify;
+  }
+
+  .lfj span {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    filter: drop-shadow(1px 1px 1px black);
+    transform: scale(1);
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .lfj h2 {
+    filter: drop-shadow(4px 3px 2px rgb(62, 59, 59));
+    transform: scale(1.1);
+    font-weight: 700;
+    font-size: 2em;
+    font-size: 2em;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .lfj h4 {
+    margin-top: -1em;
+  }
+  .mit:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+  }
+
+  .lfj p {
+    font-size: 25px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .lfj b {
+    color: yellow;
+  }
+
+  .lfj li {
+    list-style: number;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .lfj h4 {
+    padding: 1em 0;
+  }
+
+  .rgsg a {
+    display: inline-block;
+    /* background-color: #ddd; */
+    padding: 3px;
+  }
+
+  .dttm {
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .ctgh {
+    text-align: center;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  .ctgh h1 {
+    font-size: 5em;
+  }
+
+  .ctgh .hl {
+    margin-top: -0.7em;
+  }
+
+  .ctgh p {
+    font-size: 25px;
+  }
+  .publ{
+    /* display: flex;
+    align-items: start; */
+    padding-bottom: 1em;
+  }
+.publ h5{
+font-size: 2em;
+filter: drop-shadow(2px 2px 2px black);
+margin:-0.2em 8.5em 0.1em 8.5em;
+}
+.publ p{
+  max-width: 50em;
+  /* margin:-0.2em 20em 0 20em; */
+  text-align:justify;
+  font-size: 20px;
+  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+  color: yellow;
+  font-weight: 500;
+}
+.heo :hover{
+  transform: scale(1.1);
+}
+/* .abst{
+  text-align: center;
+  padding: 0.1em;
+  font-size: 20px;
+  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+}
+.abst a{
+  text-decoration: none;
+  color:yellow;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 600;
+} */
+
+  @media (max-width:575px) {
+    .registar {
+      background-position-x: right;
+      background-repeat: repeat;
+      background-position: center;
+    }
+
+    .registar h1 {
+      font-size: 37px;
+      filter: drop-shadow(2px 4px 4px black);
+
+    }
+
+    .rhj .pag {
+      font-weight: 500;
+      filter: none;
+    }
+
+    .rgsg {
+      flex-direction: column;
+    }
+
+    .rhj {
+      padding-bottom: 3em;
+    }
+
+    .rhj h2 {
+      text-align: center;
+      font-size: 28px;
+      padding: 0.5em 0 0em 0;
+      transform: none;
+
+    }
+
+    .rhj p {
+      text-align: left;
+      font-size: 25px;
+      filter: drop-shadow(1px 1px 1px black);
+    }
+
+    .rhj b {
+      font-weight: 800;
+    }
+
+    .lfj h2 {
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .lfj p {
+      text-align: left;
+    }
+
+    .bmn {
+      padding-top: 1em;
+    }
+
+    .lfj li {
+      text-align: left;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .lfj h4 {
+      text-align:center;
+      font-size: 24px;
+      margin-top: 0.05em;
+      margin-bottom: -0.5em;
+      filter: drop-shadow(2px 4px 4px black);
+    }
+
+    .ctgh h1 {
+      font-size: 4em;
+    }
+
+    .ctgh h2 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+
+    .ctgh h4 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 0.5em;
+    }
+
+    .ctgh p {
+      text-align: center;
+      padding: -1em 0;
+    }
+
+    .ctgh .hl {
+      margin-top: -0.5em;
+    }
+
+    .ctgh span {
+      font-weight: bold;
+    }
+  .publ{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 3em 10em 0 10em; */
+  }
+  .publ h5{
+    text-align: center;
+    font-size: 30px;
+    filter: drop-shadow(2px 2px 2px black);
+
+  }
+  .publ p{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: -1em;
+  }
+ 
+  }
+  @media (min-width:350px) and (max-width:380px) {
+    .publ{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 3em 8em 0 8em; */
+  }
+  }
+  @media (min-width:600px) and (max-width:1024px) {
+    .publ{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 3em 10em 0 10em; */
+  }
+  .publ h5{
+    text-align: center;
+    filter: drop-shadow(2px 2px 2px black);
+  }
+  .publ p{
+    padding-top: 1em;
+    text-align: center;
+  }
+  }
+</style>
+
+<body>
+  <div class="loader"></div>
+  <!--================================================NavBar==================================================== -->
+  <nav class="navbar navbar-expand-md bg-">
+    <div class="container-fluid ">
+      <a class="navbar-brand">
+        <img src="image/clg -logo.png" alt="" height="35" class="ex">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar" style="background-color:hsl(11, 78%, 53%);"></span>
+        <span class="toggler-icon middle-bar " style="background-color:hsl(11, 78%, 53%);"></span>
+        <span class="toggler-icon bottom-bar " style="background-color:hsl(11, 78%, 53%); "></span>
+      </button>
+      <div class="collapse navbar-collapse bg-transparent " id="navbarSupportedContent">
+        <ul class="navbar-nav text-center col">
+          <li class="nav-item col">
+            <a class="nav-link col display-6" aria-current="page" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item col abt">
+            <a class="nav-link col display-6 abt" aria-current="page" href="about.html">About</a>
+          </li>
+          <div class="dropdown">
+            <button onclick="myFunction()"
+              class="dropbtn text-drak-50 bg-transparent dropdown-toggle ">Conference</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Topic.html">Topics</a>
+              <a href="registration.html">Registration</a>
+              <a href="index.html#date">Date&Time</a>
+              <a href="Commitite.html">Our Team</a>
+            </div>
+          </div>
+          <li class="nav-item col">
+            <a class="nav-link col display-6" aria-current="page" href="index.html#contact">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- ===============================================NavBar==========================================================================-->
+
+  <!--  -->
+  <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white  registar" id="registar">
+    <h1 class="mb-3">REGISTRATION <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">&</span>
+      GUIDE LINES</h1>
+   <div class="publ">
+    <h5>Publication Details:</h5>
+   <center>
+    <p>Registration is mandatory for at least one author of an accepetd paper.
+      Interested authors can do paper publication in Scopus Index Journals / SCI Journals/ Book Chapters/ Lecture Series/Indian Patent with additional cost</p>
+   </center>
+    
+    </div>
+    <!-- <div class="abst">Sample Format of Abstract <a href="Word/Sample Format.docx">Download</a></div> -->
+   
+    <div class="rgsg">
+      <div class="rhj">
+        <h2>Submission Guidelines</h2>
+        <p><span>Abstract:</span> Maximum 200 Words</p>
+        <p><span>Keywords:</span> Maximum 6 Words</p>
+        <p><span>File Format:</span> PDF or Ms Word</p>
+        <p><span>Paper Format:</span> Single Column Format <br><b class="pag">(Maximum of 10 Pages)</b></p>
+        <p><span>Submit Full Paper To:</span><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScXdHAGcx1JuYBJlayRivqsjVQLNcF0_3m3lSzGDAxLwQCybg/viewform"
+            class="text-decoration-none text-black"><b>Link for Submission</b></a></p>
+
+
+      </div>
+      <div class="lfj">
+        <h2>Registration Fee Details</h2>
+        <p><span style="font-weight: 600;">UG Student: </span><span
+            style="color: rgb(217, 255, 0); font-size: 25px;font-weight: 700;">Rs.500/-</span></p>
+        <p><span style="font-weight: 600;">PG Students & Research Scholars <br>/Academicians:</span><span
+            style="color: rgb(217, 255, 0); font-size: 25px;font-weight: 700;">Rs.1000/-</span> </p>
+        <p><span style="font-weight: 600;">Corporate:</span><span
+            style="color: rgb(217, 255, 0); font-size: 25px;font-weight: 700;">Rs.1500/-</span></p>
+        <h2 class="bmn">Registration Fee Includes</h2>
+        <li>E-Conference proceedings</li>
+        <li>Certificates</li>
+        <h4>Payment Link:<a href="https://docs.google.com/forms/d/1ConBZkzAqxRsqKnRmHQDOBSqirV4cDtSWpYTREdEfrs/edit"
+            class="text-decoration-none"><b>Link for Payment</b></a> </h4>
+      </div>
+    </div>
+    <div class="dttm">
+      <h6 class="text-light " style="padding-top: 20px;">Registration Ends In:</h6>
+      <p id="demo" class="text-center tim text-bg-danger"></p>
+    </div>
+    <div class="ctgh">
+      <h1 class="mt-2">Contact</h1>
+      <h2>CONFERENCE COORDINATOR</h2>
+      <h4>Dr.S.ANBU, M.E., Ph.D.,/Professor</h4>
+      <h4>Mrs.A.Ponsangeetha, M.E.,/Assistant Professor</h4>
+      <p><span>Contact Details:</span><b class="nom">7904830224</b></p>
+      <p class="hl"><span>Contact Details:</span><b class="nom">9884559506</b></p>
+    </div>
+  </div>
+  </div>
+  <!--  -->
+
+
+
+  <!-- ===============================================Footer==========================================================================-->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!--Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
+      <!-- Left -->
+      <div class=" d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+      <!-- Right -->
+      <div>
+        <a href="https://www.youtube.com/@velammalinstituteoftechnol242/featured" class="me-4 text-reset"
+          target="_blank">
+          <ion-icon name="logo-youtube" class="text-danger"></ion-icon>
+        </a>
+        <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a> -->
+        <a href="https://velammalitech.edu.in/" class="me-4 text-reset" target="_blank">
+          <ion-icon name="logo-google"></ion-icon>
+        </a>
+        <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a> -->
+      </div>
+      <!-- Right -->
+    </section>
+    <!--Social media -->
+    <!-- Copyright -->
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright: <img src="image/Velammal-Institute-of-Technology-logo.png" alt="" width="30">
+      Velammal.edu.tech.in
+    </div>
+    <div class="text-center bg-dark-subtle text-black ">Developed By:Naveen</div>
+    <!-- Copyright -->
+  </footer>
+  <!-- ===============================================Footer==========================================================================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

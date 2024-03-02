@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="max-age=3600">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/ICICT LOGO.jpg">  
+  <title>ICICT-2024</title>
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!--  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<style>
+ .about{
+    background: url('image/About\ Background.webp'); 
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.about h1{
+    padding-top:1em;
+    font-weight: 800;
+    font-size: 6em;
+    filter: drop-shadow(2px 2px 2px grey);
+    transform: scale(1);
+    font-family:  "Space Grotesk", sans-serif;
+}
+.about h2{
+  font-weight: 800;
+  font-size: 5em;
+  filter: drop-shadow(2px 2px 2px grey);
+  transform: scale(1);
+  font-family:  "Space Grotesk", sans-serif;
+}
+.about p{
+    padding-bottom: 2em;
+    font-family:  "Space Grotesk", sans-serif;
+    font-size: 20px;
+}
+.bro{
+  margin-top: -5em;
+  font-size: 2em;
+  color: white;
+  font-family:  "Space Grotesk", sans-serif;
+
+}
+.he{
+  font-family:  "Space Grotesk", sans-serif;
+
+  font-size: 2em;
+}
+.pan{
+  margin-bottom: 1em;
+}
+.about img{
+  width: 50em;
+}
+@media screen and (max-width:775px) { 
+  .about h1{
+        font-size: 50px;
+    }
+  .about h2{
+    font-size: 50px;
+  }
+ .about img{
+  /* margin-top: -2em; */
+  width: 100%;
+ }
+}
+</style>
+
+<body>
+  <div class="loader"></div>
+  <!--================================================NavBar==================================================== -->
+  <nav class="navbar navbar-expand-md bg-">
+    <div class="container-fluid ">
+      <a class="navbar-brand">
+        <img src="image/clg -logo.png" alt="" height="35" class="ex">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar" style="background-color:hsl(11, 78%, 53%);"></span>
+        <span class="toggler-icon middle-bar " style="background-color:hsl(11, 78%, 53%);"></span>
+        <span class="toggler-icon bottom-bar " style="background-color:hsl(11, 78%, 53%); "></span>
+      </button>
+      <div class="collapse navbar-collapse bg-transparent " id="navbarSupportedContent">
+        <ul class="navbar-nav text-center col">
+          <li class="nav-item col">
+            <a class="nav-link col display-6" aria-current="page" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item col abt">
+            <a class="nav-link col display-6 abt" aria-current="page" href="about.html">About</a>
+          </li>
+          <div class="dropdown">
+            <button onclick="myFunction()"
+              class="dropbtn text-drak-50 bg-transparent dropdown-toggle ">Conference</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Topic.html">Topics</a>
+              <a href="registration.html">Registration</a>
+              <a href="index.html#date">Date&Time</a>
+              <a href="Commitite.html">Our Team</a>
+            </div>
+          </div>
+          <li class="nav-item col">
+            <a class="nav-link col display-6" aria-current="page" href="index.html#contact">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- ===============================================NavBar==========================================================================-->
+
+   <!-- ===============================================About==========================================================================-->
+
+   <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white  about" id="about">
+    <h1 class="mb-3">ABOUT THE CONFERENCE</h1>
+    <h2 class="">ICICT 2024<br></h2><br>
+    <p>International Conference on
+      Innovation in Computing & Technology (ICICT-2024)
+      is aimed to promote the scientific platform for exchange of ideas between the researches and promoting
+      innovation aspects in Engineering & Science. The conference will boost excellent innovations in terms of day
+      life and academics. This International Conference on Innovation in Computing & Technology is Organized on 27
+      <sup>th</sup>
+      MARCH 2024 by Department Of Computer Science and Engineering,Velammal Institute of Technology, Chennai, India.
+      This Conference is an initiation to build a
+      technical society for future collaboration and specific goal of globalization to achieve international
+      standards.
+    </p>
+   <div class="pan"><span class="he">Download:</span><a href="pdf/Broucher.pdf" class="bro" download="Broucher">Broucher</a></div>
+    <img src="image/Pamplete.webp" alt="" class="pamlte">
+  </div>
+  <!-- ===============================================About==========================================================================-->
+   
+
+
+
+
+  <!-- ===============================================Footer==========================================================================-->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!--Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
+      <!-- Left -->
+      <div class=" d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+      <!-- Right -->
+      <div>
+        <a href="https://www.youtube.com/@velammalinstituteoftechnol242/featured" class="me-4 text-reset"
+          target="_blank">
+          <ion-icon name="logo-youtube" class="text-danger"></ion-icon>
+        </a>
+        <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a> -->
+        <a href="https://velammalitech.edu.in/" class="me-4 text-reset" target="_blank">
+          <ion-icon name="logo-google"></ion-icon>
+        </a>
+        <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a> -->
+      </div>
+      <!-- Right -->
+    </section>
+    <!--Social media -->
+    <!-- Copyright -->
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright: <img src="image/Velammal-Institute-of-Technology-logo.png" alt="" width="30">
+      Velammal.edu.tech.in
+    </div>
+    <div class="text-center bg-dark-subtle text-black ">Developed By:Naveen</div>
+    <!-- Copyright -->
+  </footer>
+  <!-- ===============================================Footer==========================================================================-->
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
